@@ -33,7 +33,7 @@ export default function Home() {
       >
         <Image marginBottom={2} src="/institutoagronelli.png" alt="Instituto Agronelli" />
   
-        <Text textAlign="center" fontSize="lg" color="gray.400" marginBottom={2}>
+        <Text textAlign="center" fontSize="lg" color="#FFFFFF" marginBottom={2}>
           Insira seu e-mail e receba o Livreto do Circolando para colorir!
         </Text>
   
@@ -46,13 +46,13 @@ export default function Home() {
   
         <Button
           type="submit"
-          backgroundColor="#288B45"
+          backgroundColor="#194E25"
           height="50px"
           borderRadius="sm"
           marginTop={6}
-          _hover={{ backgroundColor: '#083f44' }}
+          _hover={{ backgroundColor: '#288B45' }}
         >
-          INSCREVER
+          QUERO RECEBER
         </Button>
       </Flex>
     </Flex>
