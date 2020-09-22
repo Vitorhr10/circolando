@@ -1,12 +1,15 @@
-import { useState } from 'react';
+import { FormEvent, useState } from 'react';
 import {Flex, Image, Button, Text } from '@chakra-ui/core'
 import Input from '../components/Input'
+import axios from 'axios';
 
 export default function Home() {
   const [email, setEmail] = useState('');
 
-  function handleSignUpToNewsletter() {
-
+  function handleSignUpToNewsletter(event: FormEvent) {
+    event.preventDefault();
+    
+    axios.post('/api/subscribe', { email })
   }
 
   return (
@@ -30,8 +33,8 @@ export default function Home() {
       >
         <Image marginBottom={2} src="/institutoagronelli.png" alt="Instituto Agronelli" />
   
-        <Text textAlign="center" fontSize="sm" color="gray.400" marginBottom={2}>
-          Insira seu e-mail e receba o Livreto para colorir!
+        <Text textAlign="center" fontSize="lg" color="gray.400" marginBottom={2}>
+          Insira seu e-mail e receba o Livreto do Circolando para colorir!
         </Text>
   
         <Input
