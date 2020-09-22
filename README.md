@@ -14,10 +14,6 @@
   <img alt="Github License" src="https://img.shields.io/github/license/eugustavo/youtube-nextjs-design-system" />
 </p>
 
-<p align="center">
-  <img alt="Rocketseat" src="./.github/assets/login-rocketseat.png">
-</p>
-
 
 ## 🚀 Getting started
 
