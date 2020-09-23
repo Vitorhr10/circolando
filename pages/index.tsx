@@ -38,7 +38,7 @@ export default function Home() {
         width="100%" 
         maxW="400px"
       >
-        <Image marginBottom={2} src="/institutoagronelli.png" alt="Instituto Agronelli" />
+        <Image marginBottom={2} src="/institutoagronelli.png" alt="Instituto Agronelli"/>
   
         <Text textAlign="center" fontSize="lg" color="#FFFFFF" marginBottom={2}>
           Insira seu e-mail e receba o Livreto do Circolando para colorir!
@@ -63,6 +63,21 @@ export default function Home() {
         </Button>
       </Flex>
 
+      <Flex 
+        as="main"
+        backgroundColor="gray.700"
+        flexDir="column"
+        alignItems="stretch"
+        padding={4}
+        marginTop={4}
+        width="100%" 
+      >
+
+        <Text textAlign="center" marginTop={2} fontSize="sm" color="#FFFFFF" marginBottom={2}>
+          © Instituto Agronelli de Desenvolvimento Social. All rights reserved.
+        </Text>
+
+      </Flex>
     </Flex>
   )
 }
