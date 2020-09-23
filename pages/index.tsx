@@ -18,8 +18,15 @@ export default function Home() {
       height="100vh"
       justifyContent="center"
       alignItems="center"
+      flexDir="column"
+      size="100%"
     >
-      <Flex
+
+      <Flex gridArea="logo" flexDir="row" alignItems="flex-start">
+        <Image src="/circolando-header.jpg" alt="Circolando" />
+      </Flex>
+ 
+      <Flex 
         as="form"
         onSubmit={handleSignUpToNewsletter}
         backgroundColor="gray.700"
@@ -55,6 +62,7 @@ export default function Home() {
           QUERO RECEBER
         </Button>
       </Flex>
+
     </Flex>
   )
 }
