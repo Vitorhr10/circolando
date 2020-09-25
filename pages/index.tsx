@@ -23,7 +23,7 @@ export default function Home() {
     >
 
       <Flex 
-        gridArea="header" 
+        gridArea="header"
         flexDir="row" 
         alignItems="flex-start"
       >
@@ -31,9 +31,10 @@ export default function Home() {
       </Flex>
 
       <Flex 
-        gridArea="text" 
-        flexDir="row" 
+        gridArea="section" 
+        flexDir="column" 
         align="top"
+        alignItems="center"
       >
 
         <Flex
@@ -41,8 +42,8 @@ export default function Home() {
           flexDir="column" 
           align="top"
           maxW="600px"
-          margin="10"
-
+          margin="5"
+          alignItems="center"
         >
           <Text textAlign="center" textTransform="uppercase" fontSize="xl" color="#FFFFFF" marginBottom={10}>
             Programação dia das crianças
