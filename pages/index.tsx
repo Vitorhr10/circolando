@@ -1,5 +1,6 @@
 import { FormEvent, useState } from 'react';
-import {Flex, Image, Button, Text, Grid } from '@chakra-ui/core'
+import emailjs from 'emailjs-com';
+import {Flex, Image, Button, Text} from '@chakra-ui/core'
 import Input from '../components/Input'
 import axios from 'axios';
 
@@ -11,7 +12,19 @@ export default function Home() {
     
     axios.post('/api/subscribe', { email })
   }
+  
+  function sendEmail(e) {
+    e.preventDefault();
 
+    emailjs.sendForm('gmail', 'template_1fldosj', e.target, 'user_dyd6MMzB00CNrMZdDrb7z')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset()
+  }
+  
   return (
     <Flex
       as="main"
@@ -41,11 +54,11 @@ export default function Home() {
           gridArea="text" 
           flexDir="column" 
           align="top"
-          maxW="600px"
+          maxW="900px"
           margin="5"
           alignItems="center"
         >
-          <Text textAlign="center" textTransform="uppercase" fontSize="xl" color="#FFFFFF" marginBottom={10}>
+          <Text textAlign="center" textTransform="uppercase" fontSize="xl" color="#FFFFFF" marginBottom={10} marginTop={5}>
             Programação dia das crianças
           </Text>
 
@@ -68,14 +81,13 @@ export default function Home() {
         
         <Flex 
           as="form"
-          onSubmit={handleSignUpToNewsletter}
+          onSubmit={sendEmail}
           backgroundColor="gray.700"
           borderRadius="md"
           flexDir="column"
           alignItems="stretch"
           padding={8}
-          marginTop={4}
-          width="100%" 
+          margin={5}
           maxW="400px"
         >
           <Image marginBottom={2} src="/institutoagronelli.png" alt="Instituto Agronelli"/>
@@ -88,6 +100,8 @@ export default function Home() {
             placeholder="Seu e-mail"
             marginTop={2}
             value={email}
+            type="email"
+            name="email"
             onChange={e => setEmail(e.target.value)}
             />
     
