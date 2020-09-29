@@ -1,8 +1,6 @@
 import React from 'react';
 import { Divider as ChakraDivider, Grid } from '@chakra-ui/core'
 
-// import { Container } from './styles';
-
 const Divider: React.FC = () => {
   return (
     <Grid

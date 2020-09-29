@@ -1,6 +1,6 @@
 import { FormEvent, useState } from 'react';
 import emailjs from 'emailjs-com';
-import {Flex, Image, Button, Text} from '@chakra-ui/core'
+import {Flex, Image, Button, Text, Box, Divider, Accordion, AccordionHeader, AccordionItem, AccordionIcon, AccordionPanel, Icon} from '@chakra-ui/core'
 import Input from '../components/Input'
 import axios from 'axios';
 
@@ -58,7 +58,7 @@ export default function Home() {
           margin="5"
           alignItems="center"
         >
-          <Text textAlign="center" textTransform="uppercase" fontSize="xl" color="#FFFFFF" marginBottom={10} marginTop={5}>
+          <Text textAlign="center" textTransform="uppercase" fontSize="xl" color="#FFFFFF" marginBottom={8} marginTop={5}>
             Programação dia das crianças
           </Text>
 
@@ -95,9 +95,9 @@ export default function Home() {
           <Text textAlign="center" fontSize="lg" color="#FFFFFF" marginBottom={2}>
             Insira seu e-mail e receba o Livreto do Circolando para colorir!
           </Text>
-    
+          
           <Input
-            placeholder="Seu e-mail"
+            placeholder="E-mail"
             marginTop={2}
             value={email}
             type="email"
@@ -117,6 +117,44 @@ export default function Home() {
           </Button>
         </Flex>
       </Flex>
+
+      <Divider color="#FFFFFF" size="80%" />
+
+      <Text textAlign="center" fontSize="xl" color="#FFFFFF" marginTop={5} marginBottom={3}>
+        FAQs
+      </Text>
+
+      <Accordion defaultIndex={[0]} allowMultiple maxW="900px" >
+      <AccordionItem>
+        <AccordionHeader>
+          <Box flex="1" textAlign="left">
+            Sobre o Livreto Circolando
+          </Box>
+          <AccordionIcon />
+        </AccordionHeader>
+        <AccordionPanel pb={4}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.
+        </AccordionPanel>
+      </AccordionItem>
+
+      <AccordionItem>
+        <AccordionHeader>
+          <Box flex="1" textAlign="left">
+            Sobre a Live
+          </Box>
+          <AccordionIcon />
+        </AccordionHeader>
+        <AccordionPanel pb={4}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.
+        </AccordionPanel>
+      </AccordionItem>
+    </Accordion>
 
       <Flex 
         as="main"
