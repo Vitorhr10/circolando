@@ -1,8 +1,9 @@
 import { FormEvent, useState } from 'react';
-import emailjs from 'emailjs-com';
-import {Flex, Image, Button, Text, Box, Divider, Accordion, AccordionHeader, AccordionItem, AccordionIcon, AccordionPanel, useToast} from '@chakra-ui/core'
-import Input from '../components/Input'
 import axios from 'axios';
+import {Flex, Image, Button, Text, Box, Divider, Accordion, AccordionHeader, AccordionItem,
+        AccordionIcon, AccordionPanel, useToast, Link} from '@chakra-ui/core'
+import emailjs from 'emailjs-com';
+import Input from '../components/Input'
 
 export default function Home() {
   const [email, setEmail] = useState('');
@@ -115,8 +116,7 @@ export default function Home() {
             _hover={{ backgroundColor: '#288B45' }}
             onClick={() =>
               toast({
-                title: "E-mail enviado com sucesso!",
-                description: "Verifique sua caixa de mensagem.",
+                description: "E-mail enviado com sucesso!",
                 status: "success",
                 duration: 9000,
                 isClosable: true,
@@ -179,7 +179,7 @@ export default function Home() {
       >
 
         <Text textAlign="center" marginTop={2} fontSize="sm" color="#FFFFFF" marginBottom={2}>
-          © Instituto Agronelli de Desenvolvimento Social. All rights reserved.
+          © <Link href="https://www.institutoagronelli.org.br/" isExternal>Instituto Agronelli de Desenvolvimento Social</Link>. All rights reserved.
         </Text>
 
       </Flex>
