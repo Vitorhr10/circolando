@@ -1,11 +1,12 @@
 import { FormEvent, useState } from 'react';
 import emailjs from 'emailjs-com';
-import {Flex, Image, Button, Text, Box, Divider, Accordion, AccordionHeader, AccordionItem, AccordionIcon, AccordionPanel, Icon} from '@chakra-ui/core'
+import {Flex, Image, Button, Text, Box, Divider, Accordion, AccordionHeader, AccordionItem, AccordionIcon, AccordionPanel, useToast} from '@chakra-ui/core'
 import Input from '../components/Input'
 import axios from 'axios';
 
 export default function Home() {
   const [email, setEmail] = useState('');
+  const toast = useToast();
 
   function handleSignUpToNewsletter(event: FormEvent) {
     event.preventDefault();
@@ -24,7 +25,7 @@ export default function Home() {
       });
       e.target.reset()
   }
-  
+
   return (
     <Flex
       as="main"
@@ -112,6 +113,15 @@ export default function Home() {
             borderRadius="sm"
             marginTop={6}
             _hover={{ backgroundColor: '#288B45' }}
+            onClick={() =>
+              toast({
+                title: "E-mail enviado com sucesso!",
+                description: "Verifique sua caixa de mensagem.",
+                status: "success",
+                duration: 9000,
+                isClosable: true,
+              })
+            }
             >
             QUERO RECEBER
           </Button>
@@ -155,6 +165,8 @@ export default function Home() {
         </AccordionPanel>
       </AccordionItem>
     </Accordion>
+
+    <br></br>
 
       <Flex 
         as="main"
