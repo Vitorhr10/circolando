@@ -5,7 +5,7 @@ class MyDocument extends Document<DocumentProps> {
     return (
       <Html>
         <Head>
-          <title>Instituto Agronelli</title>
+          <title>Instituto Agronelli - Circolando</title>
           <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap" rel="stylesheet" />  
           <meta charSet="utf-8" />
         </Head>

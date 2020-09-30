@@ -42,7 +42,7 @@ export default function Home() {
         flexDir="row" 
         alignItems="flex-start"
       >
-        <Image src="/circolando-header.jpg" alt="Circolando" />
+        <Image src="/circolando-header.jpg" alt="Circolando vamos colorir" htmlWidth="100%"/>
       </Flex>
 
       <Flex 
@@ -84,7 +84,7 @@ export default function Home() {
         <Flex 
           as="form"
           onSubmit={sendEmail}
-          backgroundColor="gray.700"
+          backgroundColor="gray.50"
           borderRadius="md"
           flexDir="column"
           alignItems="stretch"
@@ -92,9 +92,9 @@ export default function Home() {
           margin={5}
           maxW="400px"
         >
-          <Image marginBottom={2} src="/institutoagronelli.png" alt="Instituto Agronelli"/>
+          <Image marginBottom={2} src="/institutoagronelli.png" alt="Instituto Agronelli" padding={5}/>
     
-          <Text textAlign="center" fontSize="lg" color="#FFFFFF" marginBottom={2}>
+          <Text textAlign="center" fontSize="lg" fontWeight="bold" color="#000" marginBottom={2} marginTop={2}>
             Insira seu e-mail e receba o Livreto do Circolando para colorir!
           </Text>
           
@@ -112,7 +112,7 @@ export default function Home() {
             backgroundColor="#194E25"
             height="50px"
             borderRadius="sm"
-            marginTop={6}
+            marginTop={3}
             _hover={{ backgroundColor: '#288B45' }}
             onClick={() =>
               toast({
@@ -179,7 +179,7 @@ export default function Home() {
       >
 
         <Text textAlign="center" marginTop={2} fontSize="sm" color="#FFFFFF" marginBottom={2}>
-          © <Link href="https://www.institutoagronelli.org.br/" isExternal>Instituto Agronelli de Desenvolvimento Social</Link>. All rights reserved.
+          © <Link href="https://www.institutoagronelli.org.br/" isExternal>Instituto Agronelli de Desenvolvimento Social</Link>. Todos os direitos reservados.
         </Text>
 
       </Flex>
