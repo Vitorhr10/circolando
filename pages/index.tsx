@@ -1,7 +1,7 @@
 import { FormEvent, useState } from 'react';
 import axios from 'axios';
 import {Flex, Image, Button, Text, Box, Divider, Accordion, AccordionHeader, AccordionItem,
-        AccordionIcon, AccordionPanel, useToast, Link} from '@chakra-ui/core'
+        AccordionIcon, AccordionPanel, useToast, Link, Heading} from '@chakra-ui/core'
 import emailjs from 'emailjs-com';
 import Input from '../components/Input'
 
@@ -36,6 +36,21 @@ export default function Home() {
       flexDir="column"
       size="100%"
     >
+      <Flex 
+        gridArea="header"
+        alignItems="center"
+        flexDirection="column"
+        backgroundColor="gray.700"
+        width="100%"
+      >
+        <Heading as="h1" size="2xl" textTransform="uppercase" fontFamily= "Times New Roman" color="#FBE059">
+          Circolando
+        </Heading>
+
+        <Heading as="h2" size="md" textTransform="uppercase" fontWeight="none" color="#FBE059" marginBottom="2">
+          Iniciativas Artísticas
+        </Heading>
+      </Flex>
 
       <Flex 
         gridArea="header"
@@ -60,23 +75,23 @@ export default function Home() {
           margin="5"
           alignItems="center"
         >
-          <Text textAlign="center" textTransform="uppercase" fontSize="xl" color="#FFFFFF" marginBottom={8} marginTop={5}>
+          <Heading as="h1" textAlign="center" textTransform="uppercase" fontSize="xl" marginBottom={8} marginTop={5}>
             Programação dia das crianças
-          </Text>
+          </Heading>
 
-          <Text fontSize="md" color="#FFFFFF">
+          <Text fontSize="md">
             A programação da "Semana da Criança" em Uberaba conta com diversas atividades para toda a população. Os eventos da Prefeitura de Uberaba, que acontecem até o próximo domingo (13), contam com apresentações musicais, brincadeiras, palestras, gincanas educativas, entre outros. Todas as atividades são gratuitas e os menores de idade devem estar acompanhados de um adulto responsável.
           </Text>   
           
           <br></br>
 
-          <Text fontSize="md" color="#FFFFFF">
+          <Text fontSize="md">
             As atividades programadas para a semana comemorativa começaram nesta segunda-feira (7), com o projeto de Conscientização Ambiental, na reabertura do Zoológico. O Parque do Jacarandá estava fechado para reformas de adequação. Além disso, desde o dia 2 até o dia 18 de outubro, palestras sobre educação infantil são apresentadas para a comunidade, voltada para pais e educadores.
           </Text>  
 
           <br></br>
 
-          <Text fontSize="md" color="#FFFFFF">
+          <Text fontSize="md">
             As atividades programadas para a semana comemorativa começaram nesta segunda-feira (7), com o projeto de Conscientização Ambiental, na reabertura do Zoológico. O Parque do Jacarandá estava fechado para reformas de adequação. Além disso, desde o dia 2 até o dia 18 de outubro, palestras sobre educação infantil são apresentadas para a comunidade, voltada para pais e educadores.
           </Text> 
         </Flex>
@@ -84,7 +99,7 @@ export default function Home() {
         <Flex 
           as="form"
           onSubmit={sendEmail}
-          backgroundColor="gray.50"
+          backgroundColor="gray.100"
           borderRadius="md"
           flexDir="column"
           alignItems="stretch"
@@ -94,11 +109,12 @@ export default function Home() {
         >
           <Image marginBottom={2} src="/institutoagronelli.png" alt="Instituto Agronelli" padding={5}/>
     
-          <Text textAlign="center" fontSize="lg" fontWeight="bold" color="#000" marginBottom={2} marginTop={2}>
+          <Text textAlign="center" fontSize="lg" marginBottom={2} marginTop={2} fontWeight="bold">
             Insira seu e-mail e receba o Livreto do Circolando para colorir!
           </Text>
           
           <Input
+            color="#fff"
             placeholder="E-mail"
             marginTop={2}
             value={email}
@@ -112,6 +128,7 @@ export default function Home() {
             backgroundColor="#194E25"
             height="50px"
             borderRadius="sm"
+            color="#fff"
             marginTop={3}
             _hover={{ backgroundColor: '#288B45' }}
             onClick={() =>
@@ -128,11 +145,11 @@ export default function Home() {
         </Flex>
       </Flex>
 
-      <Divider color="#FFFFFF" size="80%" />
+      <Divider size="80%" />
 
-      <Text textAlign="center" fontSize="xl" color="#FFFFFF" marginTop={5} marginBottom={3}>
+      <Heading as="h1" textAlign="center" fontSize="xl" marginTop={5} marginBottom={3}>
         FAQs
-      </Text>
+      </Heading>
 
       <Accordion defaultIndex={[0]} allowMultiple maxW="900px" >
       <AccordionItem>
