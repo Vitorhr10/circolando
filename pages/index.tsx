@@ -37,7 +37,7 @@ export default function Home() {
       size="100%"
     >
       <Flex 
-        gridArea="header"
+        as="header"
         alignItems="center"
         flexDirection="column"
         backgroundColor="gray.700"
@@ -53,7 +53,7 @@ export default function Home() {
       </Flex>
 
       <Flex 
-        gridArea="header"
+        as="image"
         flexDir="row" 
         alignItems="flex-start"
       >
@@ -107,13 +107,14 @@ export default function Home() {
           margin={5}
           maxW="400px"
         >
-          <Image marginBottom={2} src="/institutoagronelli.png" alt="Instituto Agronelli" padding={5}/>
+          <Image marginBottom={2} src="/institutoagronelli.png" alt="Instituto Agronelli"/>
     
           <Text textAlign="center" fontSize="lg" marginBottom={2} marginTop={2} fontWeight="bold">
             Insira seu e-mail e receba o Livreto do Circolando para colorir!
           </Text>
           
           <Input
+            isRequired={true}
             color="#fff"
             placeholder="E-mail"
             marginTop={2}
@@ -147,49 +148,56 @@ export default function Home() {
 
       <Divider size="80%" />
 
-      <Heading as="h1" textAlign="center" fontSize="xl" marginTop={5} marginBottom={3}>
-        FAQs
-      </Heading>
+      <Flex
+          gridArea="section" 
+          flexDir="column" 
+          maxW="900px"
+          alignItems="center"
+        >
 
-      <Accordion defaultIndex={[0]} allowMultiple maxW="900px" >
-      <AccordionItem>
-        <AccordionHeader>
-          <Box flex="1" textAlign="left">
-            Sobre o Livreto Circolando
-          </Box>
-          <AccordionIcon />
-        </AccordionHeader>
-        <AccordionPanel pb={4}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
-        </AccordionPanel>
-      </AccordionItem>
+        <Heading as="h1" textAlign="center" fontSize="xl" marginTop={5} marginBottom={3}>
+          FAQs
+        </Heading>
 
-      <AccordionItem>
-        <AccordionHeader>
-          <Box flex="1" textAlign="left">
-            Sobre a Live
-          </Box>
-          <AccordionIcon />
-        </AccordionHeader>
-        <AccordionPanel pb={4}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
-        </AccordionPanel>
-      </AccordionItem>
-    </Accordion>
+        <Accordion defaultIndex={[0]} allowMultiple maxW="900px" >
+        <AccordionItem>
+          <AccordionHeader>
+            <Box as="h1" flex="1" textAlign="left">
+              Sobre o Livreto Circolando
+            </Box>
+            <AccordionIcon />
+          </AccordionHeader>
+          <AccordionPanel as="p" pb={4}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.
+          </AccordionPanel>
+        </AccordionItem>
+
+        <AccordionItem>
+          <AccordionHeader>
+            <Box as="h1" flex="1" textAlign="left">
+              Sobre a Live
+            </Box>
+            <AccordionIcon />
+          </AccordionHeader>
+          <AccordionPanel as="p" pb={4}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.
+          </AccordionPanel>
+        </AccordionItem>
+      </Accordion>
+    </Flex>
 
     <br></br>
 
       <Flex 
-        as="main"
+        as="footer"
         backgroundColor="gray.700"
         flexDir="column"
-        alignItems="stretch"
         padding={4}
         marginTop={4}
         width="100%"
