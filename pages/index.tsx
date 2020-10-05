@@ -80,19 +80,19 @@ export default function Home() {
           </Heading>
 
           <Text fontSize="md">
-            A programação da "Semana da Criança" em Uberaba conta com diversas atividades para toda a população. Os eventos da Prefeitura de Uberaba, que acontecem até o próximo domingo (13), contam com apresentações musicais, brincadeiras, palestras, gincanas educativas, entre outros. Todas as atividades são gratuitas e os menores de idade devem estar acompanhados de um adulto responsável.
+            No mês em que o Instituto Agronelli comemora 20 anos de fundação convidamos o palhaço Malinha para conversar e colorir com as crianças em dois encontros muito legais!
           </Text>   
           
           <br></br>
 
           <Text fontSize="md">
-            As atividades programadas para a semana comemorativa começaram nesta segunda-feira (7), com o projeto de Conscientização Ambiental, na reabertura do Zoológico. O Parque do Jacarandá estava fechado para reformas de adequação. Além disso, desde o dia 2 até o dia 18 de outubro, palestras sobre educação infantil são apresentadas para a comunidade, voltada para pais e educadores.
+            O Malinha é o personagem do projeto Circolando que foi criado em 2016 pelo artista e pedagogo Mayron Engel, aliando história pessoal com técnicas de circo, teatro, dança e música. Mayron resolveu dedicar-se exclusivamente ao riso e a expressividade, buscando estimular movimentos saudáveis em direção ao sensível.
           </Text>  
 
           <br></br>
 
           <Text fontSize="md">
-            As atividades programadas para a semana comemorativa começaram nesta segunda-feira (7), com o projeto de Conscientização Ambiental, na reabertura do Zoológico. O Parque do Jacarandá estava fechado para reformas de adequação. Além disso, desde o dia 2 até o dia 18 de outubro, palestras sobre educação infantil são apresentadas para a comunidade, voltada para pais e educadores.
+            Os encontros serão através de lives nos dias 14/10 e 21/10 às 15h30. Insira seu e-mail abaixo para se inscrever e receba o Livreto do Circolando em PDF para colorir junto com o Malinha no dia da live! Os 50 primeiros inscritos receberão o livreto físico e uma caixa de lápis de cor!
           </Text> 
         </Flex>
         
@@ -168,25 +168,68 @@ export default function Home() {
             <AccordionIcon />
           </AccordionHeader>
           <AccordionPanel as="p" pb={4}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat.
+            Conheça mais sobre o Livreto Circolando no <Link href="https://www.youtube.com/watch?v=Pu3Zz-iQO8w&feature=youtu.be" isExternal>YouTube</Link> ou acesse o site <Link href="http://circolando.com.br/entretenimento/" isExternal>Circolando</Link>.
           </AccordionPanel>
         </AccordionItem>
 
         <AccordionItem>
           <AccordionHeader>
             <Box as="h1" flex="1" textAlign="left">
-              Sobre a Live
+              Sobre as Lives
             </Box>
             <AccordionIcon />
           </AccordionHeader>
           <AccordionPanel as="p" pb={4}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat.
+            <p>1ª Live - 14/10 às 15:30 - <strong><Link href="https://www.youtube.com/channel/UCCgyTI_l1gR8icDlLmbCsEQ" isExternal>Clique aqui para assistir!</Link></strong></p> 
+            <p>2ª Live - 21/10 às 15:30 - <strong><Link href="https://www.youtube.com/channel/UCCgyTI_l1gR8icDlLmbCsEQ" isExternal>Clique aqui para assistir!</Link></strong></p>
+          </AccordionPanel>
+        </AccordionItem>
+
+        <AccordionItem>
+          <AccordionHeader>
+            <Box as="h1" flex="1" textAlign="left">
+              Como ganhar o Livreto físico e a caixa de lápis de cor?
+            </Box>
+            <AccordionIcon />
+          </AccordionHeader>
+          <AccordionPanel as="p" pb={4}>
+            O Livreto físico será destinado somente aos <strong>50 primeiros inscritos pelo site</strong>. Já o Livreto em PDF, todos que se cadastrarem neste site, iram recebe-lo em seu e-mail para imprimi-lo em casa e acompanhar a live.
+          </AccordionPanel>
+        </AccordionItem>
+
+        <AccordionItem>
+          <AccordionHeader>
+            <Box as="h1" flex="1" textAlign="left">
+              Quantos Livreto físico posso receber?
+            </Box>
+            <AccordionIcon />
+          </AccordionHeader>
+          <AccordionPanel as="p" pb={4}>
+            Será entregue 1 Livreto por criança.
+          </AccordionPanel>
+        </AccordionItem>
+
+        <AccordionItem>
+          <AccordionHeader>
+            <Box as="h1" flex="1" textAlign="left">
+              Onde recebo o Livreto físico e a caixa de lápis de cor?
+            </Box>
+            <AccordionIcon />
+          </AccordionHeader>
+          <AccordionPanel as="p" pb={4}>
+            O Livreto e a caixa de lápis de cor serão entregues no Instituto Agronelli, localizado no endereço Avenida Randolfo Borges Júnior, 1900 - Bairro Univerdecidade, de segunda à sexta, das 08:00 às 17:00, <strong>mediante a apresentação do e-mail enviado pelo Instituto Agronelli</strong>.
+          </AccordionPanel>
+        </AccordionItem>
+
+        <AccordionItem>
+          <AccordionHeader>
+            <Box as="h1" flex="1" textAlign="left">
+              Quando posso ir pegar o Livreto e a caixa de lápis de cor no Instituto Agronelli?
+            </Box>
+            <AccordionIcon />
+          </AccordionHeader>
+          <AccordionPanel as="p" pb={4}>
+            Você pode ir pegar assim que receber o e-mail do Instituto Agronelli, neste e-mail haverá todas as instruções para ir receber o Livreto e a caixa de lápis de cor.
           </AccordionPanel>
         </AccordionItem>
       </Accordion>
