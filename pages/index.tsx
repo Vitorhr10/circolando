@@ -76,11 +76,11 @@ export default function Home() {
           alignItems="center"
         >
           <Heading as="h1" textAlign="center" textTransform="uppercase" fontSize="xl" marginBottom={8} marginTop={5}>
-            Programação dia das crianças
+            Comemoração mês das crianças
           </Heading>
 
           <Text fontSize="md">
-            No mês em que o Instituto Agronelli comemora 20 anos de fundação convidamos o palhaço Malinha para conversar e colorir com as crianças em dois encontros muito legais!
+            No ano em que o Instituto Agronelli comemora 20 anos de fundação convidamos o palhaço Malinha para conversar e colorir com as crianças em dois encontros muito legais!
           </Text>   
           
           <br></br>
@@ -92,7 +92,7 @@ export default function Home() {
           <br></br>
 
           <Text fontSize="md">
-            Os encontros serão através de lives nos dias 14/10 e 21/10 às 15h30. Insira seu e-mail abaixo para se inscrever e receba o Livreto do Circolando em PDF para colorir junto com o Malinha no dia da live! Os 50 primeiros inscritos receberão o livreto físico e uma caixa de lápis de cor!
+            Os encontros serão através de lives nos dias 14/10 e 21/10 às 15h30. Insira seu e-mail abaixo para se inscrever e receba o Livreto do Circolando em PDF para colorir junto com o Malinha, no dia da live! Os 200 primeiros inscritos receberão o Livreto físico e os 50 primeiros que buscarem o Livreto ganharão uma caixa de lápis de cor!
           </Text> 
         </Flex>
         
@@ -156,7 +156,7 @@ export default function Home() {
         >
 
         <Heading as="h1" textAlign="center" fontSize="xl" marginTop={5} marginBottom={3}>
-          FAQs
+          Dúvidas frequentes
         </Heading>
 
         <Accordion defaultIndex={[0]} allowMultiple maxW="900px" >
@@ -193,7 +193,7 @@ export default function Home() {
             <AccordionIcon />
           </AccordionHeader>
           <AccordionPanel as="p" pb={4}>
-            O Livreto físico será destinado somente aos <strong>50 primeiros inscritos pelo site</strong>. Já o Livreto em PDF, todos que se cadastrarem neste site, iram recebe-lo em seu e-mail para imprimi-lo em casa e acompanhar a live.
+            O Livreto físico será destinado somente aos <strong>200 primeiros inscritos no site</strong>. Já o Livreto em PDF, todos que se cadastrarem neste site, irão recebê-lo em seu e-mail para imprimi-lo e acompanhar a live. A caixa de lápis de cor será entregue aos <strong>50 primeiros que chegarem para buscar o Livreto</strong>.
           </AccordionPanel>
         </AccordionItem>
 
@@ -224,12 +224,24 @@ export default function Home() {
         <AccordionItem>
           <AccordionHeader>
             <Box as="h1" flex="1" textAlign="left">
-              Quando posso ir pegar o Livreto e a caixa de lápis de cor no Instituto Agronelli?
+              Quando posso ir buscar o Livreto e a caixa de lápis de cor?
             </Box>
             <AccordionIcon />
           </AccordionHeader>
           <AccordionPanel as="p" pb={4}>
-            Você pode ir pegar assim que receber o e-mail do Instituto Agronelli, neste e-mail haverá todas as instruções para ir receber o Livreto e a caixa de lápis de cor.
+            Você pode ir pegar assim que receber o e-mail do Instituto Agronelli. Neste e-mail serão repassadas as instruções de como receber o Livreto e a caixa de lápis de cor.
+          </AccordionPanel>
+        </AccordionItem>
+
+        <AccordionItem>
+          <AccordionHeader>
+            <Box as="h1" flex="1" textAlign="left">
+              Mais informações?
+            </Box>
+            <AccordionIcon />
+          </AccordionHeader>
+          <AccordionPanel as="p" pb={4}>
+            Entre em contato pelo número (34) 3313-0770 ou <a href="mailto:comunicacao@institutoagronelli.org.br">envie um e-mail</a>.
           </AccordionPanel>
         </AccordionItem>
       </Accordion>
