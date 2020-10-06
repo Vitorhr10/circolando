@@ -18,7 +18,7 @@ export default function Home() {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('gmail', 'template_1fldosj', e.target, 'user_dyd6MMzB00CNrMZdDrb7z')
+    emailjs.sendForm('outlook', 'template_tono4id', e.target, 'user_KQ5mkawUdH2G6EMsezZ1F')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -180,8 +180,8 @@ export default function Home() {
             <AccordionIcon />
           </AccordionHeader>
           <AccordionPanel as="p" pb={4}>
-            <p>1ª Live - 14/10 às 15:30 - <strong><Link href="https://www.youtube.com/channel/UCCgyTI_l1gR8icDlLmbCsEQ" isExternal>Clique aqui para assistir!</Link></strong></p> 
-            <p>2ª Live - 21/10 às 15:30 - <strong><Link href="https://www.youtube.com/channel/UCCgyTI_l1gR8icDlLmbCsEQ" isExternal>Clique aqui para assistir!</Link></strong></p>
+            <p>1ª Live - 14/10 às 15:30 - <strong><Link href="https://www.youtube.com/watch?v=mwasXhO_3pY" isExternal>Clique aqui para assistir!</Link></strong></p> 
+            <p>2ª Live - 21/10 às 15:30 - <strong><Link href="https://www.youtube.com/watch?v=s7qaaKjJ0IU" isExternal>Clique aqui para assistir!</Link></strong></p>
           </AccordionPanel>
         </AccordionItem>
 
@@ -217,7 +217,7 @@ export default function Home() {
             <AccordionIcon />
           </AccordionHeader>
           <AccordionPanel as="p" pb={4}>
-            O Livreto e a caixa de lápis de cor serão entregues no Instituto Agronelli, localizado no endereço Avenida Randolfo Borges Júnior, 1900 - Bairro Univerdecidade, de segunda à sexta, das 08:00 às 17:00, <strong>mediante a apresentação do e-mail enviado pelo Instituto Agronelli</strong>.
+            O Livreto e a caixa de lápis de cor serão entregues no Instituto Agronelli, localizado no endereço Avenida Randolfo Borges Júnior, 1900 - Bairro Univerdecidade, de segunda à sexta, das 08:00 às 16:30, <strong>mediante a apresentação do e-mail enviado pelo Instituto Agronelli</strong>.
           </AccordionPanel>
         </AccordionItem>
 
