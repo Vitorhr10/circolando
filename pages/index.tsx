@@ -18,7 +18,7 @@ export default function Home() {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('outlook', 'template_tono4id', e.target, 'user_KQ5mkawUdH2G6EMsezZ1F')
+    emailjs.sendForm('service_b9yo9wt', 'template_tono4id', e.target, 'user_KQ5mkawUdH2G6EMsezZ1F')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
