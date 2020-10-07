@@ -92,7 +92,7 @@ export default function Home() {
           <br></br>
 
           <Text fontSize="md">
-            Os encontros serão através de lives nos dias 14/10 e 21/10 às 15h30. Insira seu e-mail abaixo para se inscrever e receba o Livreto do Circolando em PDF para colorir junto com o Malinha, no dia da live! Os 200 primeiros inscritos receberão o Livreto físico e os 50 primeiros que buscarem o Livreto ganharão uma caixa de lápis de cor!
+            Os encontros serão através de lives nos dias 14/10 e 21/10 às 15h30. Insira seu e-mail abaixo para se inscrever e receba o Livreto do Circolando em PDF para colorir junto com o Malinha, no dia da live! Os 150 primeiros inscritos receberão o Livreto físico e os 50 primeiros que buscarem o Livreto ganharão uma caixa de lápis de cor!
           </Text> 
         </Flex>
         
@@ -193,7 +193,7 @@ export default function Home() {
             <AccordionIcon />
           </AccordionHeader>
           <AccordionPanel as="p" pb={4}>
-            O Livreto físico será destinado somente aos <strong>200 primeiros inscritos no site</strong>. Já o Livreto em PDF, todos que se cadastrarem neste site, irão recebê-lo em seu e-mail para imprimi-lo e acompanhar a live. A caixa de lápis de cor será entregue aos <strong>50 primeiros que chegarem para buscar o Livreto</strong>.
+            O Livreto físico será destinado somente aos <strong>150 primeiros inscritos no site</strong>. Já o Livreto em PDF, todos que se cadastrarem neste site, irão recebê-lo em seu e-mail para imprimi-lo e acompanhar a live. A caixa de lápis de cor será entregue aos <strong>50 primeiros que chegarem para buscar o Livreto</strong>.
           </AccordionPanel>
         </AccordionItem>
 
@@ -230,6 +230,18 @@ export default function Home() {
           </AccordionHeader>
           <AccordionPanel as="p" pb={4}>
             Você pode ir pegar assim que receber o e-mail do Instituto Agronelli. Neste e-mail serão repassadas as instruções de como receber o Livreto e a caixa de lápis de cor.
+          </AccordionPanel>
+        </AccordionItem>
+
+        <AccordionItem>
+          <AccordionHeader>
+            <Box as="h1" flex="1" textAlign="left">
+              Quem pode ir receber o Livreto?
+            </Box>
+            <AccordionIcon />
+          </AccordionHeader>
+          <AccordionPanel as="p" pb={4}>
+            Qualquer pessoa pode ir receber o Livreto, <strong>mediante a apresentação do e-mail enviado pelo Instituto Agronelli</strong>.
           </AccordionPanel>
         </AccordionItem>
 
