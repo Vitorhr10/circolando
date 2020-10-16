@@ -26,7 +26,7 @@ export default function Home() {
       });
       e.target.reset()
   }
-
+  
   return (
     <Flex
       as="main"
@@ -181,7 +181,7 @@ export default function Home() {
           </AccordionHeader>
           <AccordionPanel as="p" pb={4}>
             <p>1ª Live - 14/10 às 15:30 - <strong><Link href="https://www.youtube.com/watch?v=mwasXhO_3pY" isExternal>Clique aqui para assistir!</Link></strong></p> 
-            <p>2ª Live - 21/10 às 15:30 - <strong><Link href="https://www.youtube.com/watch?v=s7qaaKjJ0IU" isExternal>Clique aqui para assistir!</Link></strong></p>
+            <p>2ª Live - 21/10 às 15:00 - <strong><Link href="https://www.youtube.com/watch?v=s7qaaKjJ0IU" isExternal>Clique aqui para assistir!</Link></strong></p>
           </AccordionPanel>
         </AccordionItem>
 
