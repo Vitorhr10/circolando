@@ -92,7 +92,7 @@ export default function Home() {
           <br></br>
 
           <Text fontSize="md">
-            Os encontros serão através de lives nos dias 14/10 e 21/10 às 15h30. Insira seu e-mail abaixo para se inscrever e receba o Livreto do Circolando para colorir junto com o Malinha, no dia da live! Os 150 primeiros inscritos receberão o Livreto físico e os 50 primeiros que buscarem o Livreto ganharão uma caixa de lápis de cor!
+            Os encontros serão através de lives nos dias 14/10 às 15:30 e 21/10 às 15h00. Insira seu e-mail abaixo para se inscrever e receba o Livreto do Circolando para colorir junto com o Malinha, no dia da live! Os 150 primeiros inscritos receberão o Livreto físico e os 50 primeiros que buscarem o Livreto ganharão uma caixa de lápis de cor!
           </Text> 
         </Flex>
         
@@ -253,7 +253,7 @@ export default function Home() {
             <AccordionIcon />
           </AccordionHeader>
           <AccordionPanel as="p" pb={4}>
-            Entre em contato pelo número (34) 3313-0770 ou <a href="mailto:comunicacao@institutoagronelli.org.br">envie um e-mail</a>.
+            Entre em contato pelo número (34) 3313-0770 ou envie um e-mail para comunicacao@institutoagronelli.org.br
           </AccordionPanel>
         </AccordionItem>
       </Accordion>
