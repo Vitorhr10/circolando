@@ -11,7 +11,7 @@ Circolando
 </p>
 
 <div align="center">
-  <img width="300" alt="NextJS-ChakraUI" src="./.github/assets/circolando.gif" />
+  <img width="750px" alt="Circolando" src="./.github/assets/circolando.gif" />
 </div>
 
 <p align="center">
