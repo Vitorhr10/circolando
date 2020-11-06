@@ -20,10 +20,11 @@ Circolando
 
 ---
 
-## Features
+## Techs
 - ReactJS
 - Next.js
 - Chakra UI
+- EmailJS
 
 
 ## Getting started
