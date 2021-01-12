@@ -1,3 +1,4 @@
+import React from "react";
 import { FormEvent, useState } from "react";
 import axios from "axios";
 import {
@@ -32,7 +33,7 @@ export default function Home() {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs
+      emailjs
       .sendForm(
         "service_b9yo9wt",
         "template_tono4id",
@@ -45,9 +46,10 @@ export default function Home() {
         },
         (error) => {
           console.log(error.text);
-        }
+        },
       );
-    e.target.reset();
+      e.target.reset();
+      setEmail("");
   }
 
   return (
@@ -88,7 +90,7 @@ export default function Home() {
         </Heading>
       </Flex>
 
-      <Flex as="image" flexDir="row" alignItems="flex-start">
+      <Flex as="section" flexDir="row" alignItems="flex-start">
         <Image
           src="/circolando-header.jpg"
           alt="Circolando vamos colorir"
@@ -154,6 +156,7 @@ export default function Home() {
           margin={5}
           maxW="400px"
         >
+          
           <Image
             marginBottom={2}
             src="/institutoagronelli.png"
@@ -186,9 +189,9 @@ export default function Home() {
             backgroundColor="#194E25"
             height="50px"
             borderRadius="sm"
-            color="#fff"
+            color="#bdaaaa"
             marginTop={3}
-            _hover={{ backgroundColor: "#288B45" }}
+          /*  _hover={{ backgroundColor: "#288B45" }}
             onClick={() =>
               toast({
                 description: "E-mail enviado com sucesso!",
@@ -196,7 +199,7 @@ export default function Home() {
                 duration: 9000,
                 isClosable: true,
               })
-            }
+            } */
           >
             QUERO RECEBER
           </Button>
@@ -229,7 +232,7 @@ export default function Home() {
               </Box>
               <AccordionIcon />
             </AccordionHeader>
-            <AccordionPanel as="p" pb={4}>
+            <AccordionPanel as="text" pb={4}>
               Conheça mais sobre o Livreto Circolando no{" "}
               <Link
                 href="https://www.youtube.com/watch?v=Pu3Zz-iQO8w&feature=youtu.be"
@@ -252,8 +255,8 @@ export default function Home() {
               </Box>
               <AccordionIcon />
             </AccordionHeader>
-            <AccordionPanel as="p" pb={4}>
-              <p>
+            <AccordionPanel as="text" pb={4}>
+              <Text>
                 1ª Live - 14/10 às 15:30 -{" "}
                 <strong>
                   <Link
@@ -263,8 +266,8 @@ export default function Home() {
                     Clique aqui para assistir!
                   </Link>
                 </strong>
-              </p>
-              <p>
+              </Text>
+              <Text>
                 2ª Live - 21/10 às 15:00 -{" "}
                 <strong>
                   <Link
@@ -274,7 +277,7 @@ export default function Home() {
                     Clique aqui para assistir!
                   </Link>
                 </strong>
-              </p>
+              </Text>
             </AccordionPanel>
           </AccordionItem>
 
@@ -285,7 +288,7 @@ export default function Home() {
               </Box>
               <AccordionIcon />
             </AccordionHeader>
-            <AccordionPanel as="p" pb={4}>
+            <AccordionPanel as="text" pb={4}>
               O Livreto físico será destinado somente aos{" "}
               <strong>150 primeiros inscritos no site</strong>. Já o Livreto em
               PDF, todos que se cadastrarem neste site, irão recebê-lo em seu
@@ -302,7 +305,7 @@ export default function Home() {
               </Box>
               <AccordionIcon />
             </AccordionHeader>
-            <AccordionPanel as="p" pb={4}>
+            <AccordionPanel as="text" pb={4}>
               Será entregue 1 Livreto por criança.
             </AccordionPanel>
           </AccordionItem>
@@ -314,7 +317,7 @@ export default function Home() {
               </Box>
               <AccordionIcon />
             </AccordionHeader>
-            <AccordionPanel as="p" pb={4}>
+            <AccordionPanel as="text" pb={4}>
               O Livreto e a caixa de lápis de cor serão entregues no Instituto
               Agronelli, localizado no endereço Avenida Randolfo Borges Júnior,
               1900 - Bairro Univerdecidade, de segunda à sexta, das 08:00 às
@@ -334,7 +337,7 @@ export default function Home() {
               </Box>
               <AccordionIcon />
             </AccordionHeader>
-            <AccordionPanel as="p" pb={4}>
+            <AccordionPanel as="text" pb={4}>
               Você pode ir pegar assim que receber o e-mail do Instituto
               Agronelli. Neste e-mail serão repassadas as instruções de como
               receber o Livreto e a caixa de lápis de cor.
@@ -348,7 +351,7 @@ export default function Home() {
               </Box>
               <AccordionIcon />
             </AccordionHeader>
-            <AccordionPanel as="p" pb={4}>
+            <AccordionPanel as="text" pb={4}>
               Qualquer pessoa pode ir receber o Livreto,{" "}
               <strong>
                 mediante a apresentação do e-mail enviado pelo Instituto
@@ -365,7 +368,7 @@ export default function Home() {
               </Box>
               <AccordionIcon />
             </AccordionHeader>
-            <AccordionPanel as="p" pb={4}>
+            <AccordionPanel as="text" pb={4}>
               Entre em contato pelo número (34) 3313-0770 ou envie um e-mail
               para comunicacao@institutoagronelli.org.br
             </AccordionPanel>
