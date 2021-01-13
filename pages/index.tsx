@@ -189,8 +189,9 @@ export default function Home() {
             backgroundColor="#194E25"
             height="50px"
             borderRadius="sm"
-            color="#bdaaaa"
+            color="#ffffff"
             marginTop={3}
+            _hover={{ bg: "#3e8e41" }}
           /*  _hover={{ backgroundColor: "#288B45" }}
             onClick={() =>
               toast({
