@@ -37,7 +37,7 @@ To clone and run the application, you will need to have [Git](https://git-scm.co
 $ git clone https://github.com/Vitorhr10/nextjs-functions
 
 # Access the repository
-$ cd nextjs-functions
+$ cd circolando
 
 # Install the dependencies
 $ yarn install
@@ -45,3 +45,5 @@ $ yarn install
 # Run application
 $ yarn dev
 ```
+
+Note: All the e-mails goes to EmailJS web app.
