@@ -34,7 +34,7 @@ To clone and run the application, you will need to have [Git](https://git-scm.co
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/Vitorhr10/nextjs-functions
+$ git clone https://github.com/Vitorhr10/circolando
 
 # Access the repository
 $ cd circolando
