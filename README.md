@@ -25,6 +25,7 @@ Circolando
 - Next.js
 - Chakra UI
 - EmailJS
+- MongoDB
 
 
 ## Getting started
