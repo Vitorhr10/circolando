@@ -30,6 +30,24 @@ export default function Home() {
     axios.post("/api/subscribe", { email });
   }
 
+  function ToastExample() {
+    return (
+      <Button
+        onClick={() =>
+          toast({
+            title: "Account created.",
+            description: "We've created your account for you.",
+            status: "success",
+            duration: 9000,
+            isClosable: true,
+          })
+        }
+      >
+        Show Toast
+      </Button>
+    )
+  }
+
   function sendEmail(e) {
     e.preventDefault();
 
@@ -50,6 +68,7 @@ export default function Home() {
       );
       e.target.reset();
       setEmail("");
+      ToastExample();
   }
 
   return (
@@ -124,9 +143,7 @@ export default function Home() {
             crianças em dois encontros muito legais!
           </Text>
 
-          <br></br>
-
-          <Text fontSize="md">
+          <Text fontSize="md" mt="5">
             O Malinha é o personagem do projeto Circolando que foi criado em
             2016 pelo artista e pedagogo Mayron Engel, aliando história pessoal
             com técnicas de circo, teatro, dança e música. Mayron resolveu
@@ -134,9 +151,7 @@ export default function Home() {
             estimular movimentos saudáveis em direção ao sensível.
           </Text>
 
-          <br></br>
-
-          <Text fontSize="md">
+          <Text fontSize="md" mt="5">
             Os encontros serão através de lives nos dias 14/10 às 15:30 e 21/10
             às 15h00. Insira seu e-mail abaixo para se inscrever e receba o
             Livreto do Circolando para colorir junto com o Malinha, no dia da
@@ -192,6 +207,7 @@ export default function Home() {
             color="#ffffff"
             marginTop={3}
             _hover={{ bg: "#3e8e41" }}
+
           /*  _hover={{ backgroundColor: "#288B45" }}
             onClick={() =>
               toast({
