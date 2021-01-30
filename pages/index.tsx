@@ -30,22 +30,22 @@ export default function Home() {
     axios.post("/api/subscribe", { email });
   }
 
-  function ToastExample() {
-    return (
-      <Button
-        onClick={() =>
-          toast({
-            title: "Account created.",
-            description: "We've created your account for you.",
-            status: "success",
-            duration: 9000,
-            isClosable: true,
-          })
-        }
-      >
-        Show Toast
-      </Button>
-    )
+  function emailVerificationSuccess() {
+    toast({
+      description: "E-mail enviado com sucesso!",
+      status: "success",
+      duration: 9000,
+      isClosable: true,
+    })
+  }
+
+  function emailVerificationFailure() {
+    toast({
+      description: "Erro ao enviar o e-mail!",
+      status: "error",
+      duration: 9000,
+      isClosable: true,
+    })
   }
 
   function sendEmail(e) {
@@ -61,14 +61,15 @@ export default function Home() {
       .then(
         (result) => {
           console.log(result.text);
+          emailVerificationSuccess();
         },
         (error) => {
           console.log(error.text);
+          emailVerificationFailure()
         },
       );
       e.target.reset();
       setEmail("");
-      ToastExample();
   }
 
   return (
@@ -207,16 +208,6 @@ export default function Home() {
             color="#ffffff"
             marginTop={3}
             _hover={{ bg: "#3e8e41" }}
-
-          /*  _hover={{ backgroundColor: "#288B45" }}
-            onClick={() =>
-              toast({
-                description: "E-mail enviado com sucesso!",
-                status: "success",
-                duration: 9000,
-                isClosable: true,
-              })
-            } */
           >
             QUERO RECEBER
           </Button>
