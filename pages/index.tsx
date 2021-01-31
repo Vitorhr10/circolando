@@ -138,13 +138,13 @@ export default function Home() {
             Comemoração mês das crianças
           </Heading>
 
-          <Text fontSize="md">
+          <Text fontSize="md" textAlign="justify">
             No ano em que o Instituto Agronelli comemora 20 anos de fundação
             convidamos o palhaço Malinha para conversar e colorir com as
             crianças em dois encontros muito legais!
           </Text>
 
-          <Text fontSize="md" mt="5">
+          <Text fontSize="md" mt="5" textAlign="justify">
             O Malinha é o personagem do projeto Circolando que foi criado em
             2016 pelo artista e pedagogo Mayron Engel, aliando história pessoal
             com técnicas de circo, teatro, dança e música. Mayron resolveu
@@ -152,7 +152,7 @@ export default function Home() {
             estimular movimentos saudáveis em direção ao sensível.
           </Text>
 
-          <Text fontSize="md" mt="5">
+          <Text fontSize="md" mt="5" textAlign="justify">
             Os encontros serão através de lives nos dias 14/10 às 15:30 e 21/10
             às 15h00. Insira seu e-mail abaixo para se inscrever e receba o
             Livreto do Circolando para colorir junto com o Malinha, no dia da
