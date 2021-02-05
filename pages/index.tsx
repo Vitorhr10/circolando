@@ -51,6 +51,13 @@ export default function Home() {
   function sendEmail(e) {
     e.preventDefault();
 
+    toast({
+      description: "Aguarde!",
+      status: "info",
+      duration: 3000,
+      isClosable: true,
+    })
+
       emailjs
       .sendForm(
         "service_b9yo9wt",
@@ -207,7 +214,7 @@ export default function Home() {
             borderRadius="sm"
             color="#ffffff"
             marginTop={3}
-            _hover={{ bg: "#3e8e41" }}
+            _hover={{bg: "#3e8e41"}}
           >
             QUERO RECEBER
           </Button>
