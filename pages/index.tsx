@@ -205,6 +205,12 @@ export default function Home() {
             type="email"
             name="email"
             onChange={(e) => setEmail(e.target.value)}
+            onInvalid={() => toast({
+              description: "Insira um e-mail válido, exemplo: @gmail.com!",
+              status: "warning",
+              duration: 3000,
+              isClosable: true,
+            })}
           />
 
           <Button
