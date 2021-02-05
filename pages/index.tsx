@@ -52,7 +52,7 @@ export default function Home() {
     e.preventDefault();
 
     toast({
-      description: "Aguarde!",
+      description: "Enviando, aguarde!",
       status: "info",
       duration: 3000,
       isClosable: true,
@@ -206,7 +206,7 @@ export default function Home() {
             name="email"
             onChange={(e) => setEmail(e.target.value)}
             onInvalid={() => toast({
-              description: "Insira um e-mail válido, exemplo: @gmail.com!",
+              description: "Insira um e-mail válido, exemplo: meuemail@gmail.com!",
               status: "warning",
               duration: 3000,
               isClosable: true,
