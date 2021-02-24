@@ -45,6 +45,8 @@ $ yarn install
 
 # Run application
 $ yarn dev
+or
+$ npm run dev
 ```
 
 Note: All the e-mails goes to EmailJS web app.
